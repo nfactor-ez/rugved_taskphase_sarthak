@@ -1,6 +1,6 @@
 Rugved taskphase 1
 
-
+Q1
 def triple_and(a, b, c):
     # Return True if all are True or all are False
     if (a and b and c) or (not a and not b and not c):
