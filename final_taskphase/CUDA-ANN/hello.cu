@@ -205,7 +205,6 @@ NeuralNetwork initNeuralNetwork(int n_layers, int *layer_sizes) {
 
     cublasCreate_v2(&nn.cublas_handle);
     curandCreateGenerator(&nn.curand_gen, CURAND_RNG_PSEUDO_DEFAULT);
-    curandSetPseudoRandomGeneratorSeed(nn.curand_gen, time(NULL));
 
     for (int i = 0; i < n_layers - 1; i++) {
         int m = layer_sizes[i], n = layer_sizes[i + 1];
