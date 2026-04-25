@@ -1,6 +1,6 @@
 # AI/ML Project Collection
 
-This repository contains implementations of various Artificial Intelligence and Machine Learning algorithms and techniques, including Convolutional Neural Networks (CNN), CUDA-accelerated Artificial Neural Networks (ANN), and Generative Adversarial Networks (GANs).
+This repository contains implementations of various Artificial Intelligence and Machine Learning algorithms and techniques, including Convolutional Neural Networks (CNN) and CUDA-accelerated Artificial Neural Networks (ANN).
 
 ## Project Structure
 
@@ -10,11 +10,7 @@ Contains implementations of Convolutional Neural Networks for image classificati
 
 ### CUDA-ANN/
 CUDA implementations of Artificial Neural Networks for high-performance computing.
-- `hello.cu`: CUDA C code implementing a neural network with batch normalization, ReLU activation, and softmax layers. Optimized for GPU acceleration.
-
-### GANS/
-Generative Adversarial Networks implementations.
-- (Content to be added)
+- `hello.cu`: CUDA C code implementing a neural network with batch normalization, ReLU activation, dropout, and softmax layers. Optimized for GPU acceleration using MNIST digit classification as an example.
 
 ## Requirements
 
@@ -30,9 +26,6 @@ Generative Adversarial Networks implementations.
 - cuBLAS
 - cuRAND
 - GCC/Clang compiler with CUDA support
-
-### GANS
-- (Requirements to be specified)
 
 ## Installation
 
@@ -62,21 +55,17 @@ Ensure CUDA toolkit is installed and properly configured on your system.
 1. Navigate to CUDA-ANN directory
 2. Compile the CUDA code:
 ```bash
-nvcc hello.cu -o ann_cuda -lcublas -lcurand
+nvcc hello.cu -o cuda_ann -lcublas -lcurand
 ```
 3. Run the executable:
 ```bash
-./ann_cuda
+./cuda_ann
 ```
-
-### GANs
-(Usage instructions to be added)
 
 ## Features
 
 - **CNN**: Image classification with custom CNN architecture
-- **CUDA ANN**: GPU-accelerated neural network training
-- **GANs**: Generative models for data synthesis
+- **CUDA ANN**: GPU-accelerated neural network training with advanced features like batch normalization and dropout
 
 ## Contributing
 
